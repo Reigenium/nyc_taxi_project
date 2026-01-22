@@ -1,0 +1,21 @@
+[2026-01-21T23:21:57.439+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nyc_taxi_weather_prediction.check_data_quality scheduled__2026-01-20T00:00:00+00:00 [queued]>
+[2026-01-21T23:21:57.455+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nyc_taxi_weather_prediction.check_data_quality scheduled__2026-01-20T00:00:00+00:00 [queued]>
+[2026-01-21T23:21:57.455+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-01-21T23:21:57.472+0000] {taskinstance.py:2191} INFO - Executing <Task(BranchPythonOperator): check_data_quality> on 2026-01-20 00:00:00+00:00
+[2026-01-21T23:21:57.484+0000] {standard_task_runner.py:60} INFO - Started process 317 to run task
+[2026-01-21T23:21:57.488+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'nyc_taxi_weather_prediction', 'check_data_quality', 'scheduled__2026-01-20T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/nyc_taxi_price_predictor.py', '--cfg-path', '/tmp/tmprhqd1txg']
+[2026-01-21T23:21:57.491+0000] {standard_task_runner.py:88} INFO - Job 22: Subtask check_data_quality
+[2026-01-21T23:21:57.509+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-21T23:21:57.552+0000] {task_command.py:423} INFO - Running <TaskInstance: nyc_taxi_weather_prediction.check_data_quality scheduled__2026-01-20T00:00:00+00:00 [running]> on host 3fb860006a1f
+[2026-01-21T23:21:57.652+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nyc_taxi_weather_prediction' AIRFLOW_CTX_TASK_ID='check_data_quality' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-20T00:00:00+00:00'
+[2026-01-21T23:21:57.665+0000] {base.py:83} INFO - Using connection ID 'postgres_default' for task execution.
+[2026-01-21T23:21:57.671+0000] {sql.py:450} INFO - Running statement: SELECT COUNT(*) FROM nyc_taxi_weather, parameters: None
+[2026-01-21T23:21:57.677+0000] {sql.py:459} INFO - Rows affected: 1
+[2026-01-21T23:21:57.679+0000] {logging_mixin.py:188} INFO - Найдено записей для обучения: 49999
+[2026-01-21T23:21:57.682+0000] {python.py:201} INFO - Done. Returned value was: train_model
+[2026-01-21T23:21:57.683+0000] {branch.py:35} INFO - Branch into train_model
+[2026-01-21T23:21:57.684+0000] {skipmixin.py:178} INFO - Following branch train_model
+[2026-01-21T23:21:57.703+0000] {skipmixin.py:244} INFO - Skipping tasks [('stop_pipeline', -1)]
+[2026-01-21T23:21:57.757+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=nyc_taxi_weather_prediction, task_id=check_data_quality, execution_date=20260120T000000, start_date=20260121T232157, end_date=20260121T232157
+[2026-01-21T23:21:57.823+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-21T23:21:57.852+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

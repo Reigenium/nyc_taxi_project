@@ -1,0 +1,15 @@
+[2026-01-15T11:04:42.438+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nyc_taxi_weather_prediction.merge_data scheduled__2026-01-14T00:00:00+00:00 [queued]>
+[2026-01-15T11:04:42.450+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nyc_taxi_weather_prediction.merge_data scheduled__2026-01-14T00:00:00+00:00 [queued]>
+[2026-01-15T11:04:42.451+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-01-15T11:04:42.467+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): merge_data> on 2026-01-14 00:00:00+00:00
+[2026-01-15T11:04:42.479+0000] {standard_task_runner.py:60} INFO - Started process 315 to run task
+[2026-01-15T11:04:42.484+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'nyc_taxi_weather_prediction', 'merge_data', 'scheduled__2026-01-14T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/nyc_taxi_price_predictor.py', '--cfg-path', '/tmp/tmpyhry8jgh']
+[2026-01-15T11:04:42.487+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask merge_data
+[2026-01-15T11:04:42.506+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-15T11:04:42.553+0000] {task_command.py:423} INFO - Running <TaskInstance: nyc_taxi_weather_prediction.merge_data scheduled__2026-01-14T00:00:00+00:00 [running]> on host 7d2b988f5793
+[2026-01-15T11:04:42.641+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nyc_taxi_weather_prediction' AIRFLOW_CTX_TASK_ID='merge_data' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-14T00:00:00+00:00'
+[2026-01-15T11:04:43.071+0000] {logging_mixin.py:188} INFO - Итоговый датасет: 49999 строк.
+[2026-01-15T11:04:43.076+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-01-15T11:04:43.090+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=nyc_taxi_weather_prediction, task_id=merge_data, execution_date=20260114T000000, start_date=20260115T110442, end_date=20260115T110443
+[2026-01-15T11:04:43.140+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-15T11:04:43.169+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

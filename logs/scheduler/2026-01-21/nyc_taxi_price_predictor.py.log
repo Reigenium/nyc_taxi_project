@@ -1,0 +1,378 @@
+[2026-01-21T23:21:38.181+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:21:38.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:21:38.185+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:21:38.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:21:41.703+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:21:41.944+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:21:41.944+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:21:41.970+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:21:41.970+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-20 00:00:00+00:00, run_after=2026-01-21 00:00:00+00:00
+[2026-01-21T23:21:42.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 3.829 seconds
+[2026-01-21T23:22:12.295+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:12.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:22:12.298+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:12.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:13.351+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:13.382+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:13.381+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:22:13.408+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:13.408+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:22:13.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.147 seconds
+[2026-01-21T23:22:43.622+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:43.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:22:43.625+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:43.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:44.644+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:22:44.676+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:44.676+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:22:44.701+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:22:44.700+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:22:44.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.108 seconds
+[2026-01-21T23:23:14.856+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:14.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:23:14.860+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:14.859+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:15.851+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:15.882+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:15.882+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:23:15.907+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:15.906+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:23:15.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.080 seconds
+[2026-01-21T23:23:46.147+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:46.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:23:46.150+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:46.149+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:47.238+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:23:47.270+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:47.269+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:23:47.295+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:23:47.294+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:23:47.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.178 seconds
+[2026-01-21T23:24:17.563+0000] {processor.py:161} INFO - Started process (PID=420) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:17.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:24:17.567+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:17.566+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:18.524+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:18.555+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:18.554+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:24:18.580+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:18.579+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:24:18.604+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.045 seconds
+[2026-01-21T23:24:48.768+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:48.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:24:48.771+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:48.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:49.743+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:24:49.773+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:49.773+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:24:49.795+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:24:49.795+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:24:49.818+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.055 seconds
+[2026-01-21T23:25:20.027+0000] {processor.py:161} INFO - Started process (PID=462) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:20.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:25:20.030+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:20.029+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:21.007+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:21.037+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:21.037+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:25:21.061+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:21.061+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:25:21.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.063 seconds
+[2026-01-21T23:25:51.256+0000] {processor.py:161} INFO - Started process (PID=483) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:51.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:25:51.259+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:51.259+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:52.275+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:25:52.307+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:52.307+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:25:52.333+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:25:52.333+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:25:52.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.105 seconds
+[2026-01-21T23:26:22.510+0000] {processor.py:161} INFO - Started process (PID=504) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:22.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:26:22.513+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:22.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:23.467+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:23.501+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:23.501+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:26:23.526+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:23.526+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:26:23.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.046 seconds
+[2026-01-21T23:26:53.826+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:53.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:26:53.829+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:53.829+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:54.764+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:26:54.793+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:54.792+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:26:54.817+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:26:54.817+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:26:54.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.018 seconds
+[2026-01-21T23:27:25.042+0000] {processor.py:161} INFO - Started process (PID=546) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:25.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:27:25.045+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:25.045+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:25.991+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:26.019+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:26.019+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:27:26.044+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:26.043+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:27:26.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.029 seconds
+[2026-01-21T23:27:56.264+0000] {processor.py:161} INFO - Started process (PID=567) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:56.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:27:56.267+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:56.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:57.232+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:27:57.262+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:57.262+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:27:57.286+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:27:57.286+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:27:57.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.048 seconds
+[2026-01-21T23:28:27.503+0000] {processor.py:161} INFO - Started process (PID=588) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:27.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:28:27.506+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:27.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:28.444+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:28.480+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:28.480+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:28:28.504+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:28.504+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:28:28.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.031 seconds
+[2026-01-21T23:28:58.765+0000] {processor.py:161} INFO - Started process (PID=609) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:58.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:28:58.768+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:58.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:59.839+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:28:59.872+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:59.872+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:28:59.903+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:28:59.903+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:28:59.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.166 seconds
+[2026-01-21T23:29:30.171+0000] {processor.py:161} INFO - Started process (PID=630) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:29:30.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:29:30.174+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:29:30.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:29:31.130+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:29:31.162+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:29:31.162+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:29:31.187+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:29:31.187+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:29:31.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.046 seconds
+[2026-01-21T23:30:01.386+0000] {processor.py:161} INFO - Started process (PID=651) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:01.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:30:01.390+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:01.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:02.400+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:02.440+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:02.440+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:30:02.465+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:02.465+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:30:02.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.113 seconds
+[2026-01-21T23:30:32.643+0000] {processor.py:161} INFO - Started process (PID=672) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:32.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:30:32.646+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:32.646+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:33.641+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:30:33.672+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:33.672+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:30:33.697+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:30:33.697+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:30:33.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.088 seconds
+[2026-01-21T23:31:03.922+0000] {processor.py:161} INFO - Started process (PID=693) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:03.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:31:03.925+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:03.925+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:04.943+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:04.974+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:04.974+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:31:04.999+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:04.999+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:31:05.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.105 seconds
+[2026-01-21T23:31:35.146+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:35.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:31:35.150+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:35.149+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:36.168+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:31:36.198+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:36.198+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:31:36.223+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:31:36.223+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:31:36.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.104 seconds
+[2026-01-21T23:32:06.492+0000] {processor.py:161} INFO - Started process (PID=735) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:06.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:32:06.494+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:06.494+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:07.395+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:07.425+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:07.425+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:32:07.452+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:07.452+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:32:07.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 0.988 seconds
+[2026-01-21T23:32:37.698+0000] {processor.py:161} INFO - Started process (PID=756) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:37.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:32:37.701+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:37.700+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:38.678+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:32:38.709+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:38.708+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:32:38.732+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:32:38.732+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:32:38.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.073 seconds
+[2026-01-21T23:33:08.897+0000] {processor.py:161} INFO - Started process (PID=777) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:08.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:33:08.900+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:08.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:09.834+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:09.861+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:09.861+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:33:09.884+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:09.884+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:33:09.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.012 seconds
+[2026-01-21T23:33:40.108+0000] {processor.py:161} INFO - Started process (PID=798) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:40.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:33:40.111+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:40.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:41.148+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:33:41.180+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:41.179+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:33:41.205+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:33:41.205+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:33:41.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.128 seconds
+[2026-01-21T23:34:11.362+0000] {processor.py:161} INFO - Started process (PID=819) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:11.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:34:11.366+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:11.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:12.628+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:12.668+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:12.667+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:34:12.702+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:12.702+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:34:12.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.384 seconds
+[2026-01-21T23:34:43.024+0000] {processor.py:161} INFO - Started process (PID=840) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:43.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:34:43.039+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:43.039+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:44.019+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:34:44.047+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:44.047+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:34:44.071+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:34:44.071+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:34:44.100+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.082 seconds
+[2026-01-21T23:35:14.232+0000] {processor.py:161} INFO - Started process (PID=861) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:14.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:35:14.234+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:14.234+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:15.128+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:15.158+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:15.158+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:35:15.183+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:15.183+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:35:15.209+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 0.982 seconds
+[2026-01-21T23:35:45.506+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:45.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:35:45.513+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:45.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:47.054+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:35:47.100+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:47.099+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:35:47.135+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:35:47.135+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:35:47.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.668 seconds
+[2026-01-21T23:36:17.457+0000] {processor.py:161} INFO - Started process (PID=903) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:17.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:36:17.460+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:17.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:18.379+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:18.409+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:18.409+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:36:18.432+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:18.432+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:36:18.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.004 seconds
+[2026-01-21T23:36:48.724+0000] {processor.py:161} INFO - Started process (PID=924) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:48.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:36:48.727+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:48.727+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:49.823+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:36:49.857+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:49.857+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:36:49.885+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:36:49.885+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:36:49.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.192 seconds
+[2026-01-21T23:37:20.216+0000] {processor.py:161} INFO - Started process (PID=945) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:20.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:37:20.219+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:20.219+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:21.275+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:21.305+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:21.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:37:21.329+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:21.329+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:37:21.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.145 seconds
+[2026-01-21T23:37:51.445+0000] {processor.py:161} INFO - Started process (PID=966) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:51.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:37:51.449+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:51.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:52.374+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:37:52.404+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:52.404+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:37:52.429+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:37:52.428+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:37:52.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.013 seconds
+[2026-01-21T23:38:22.673+0000] {processor.py:161} INFO - Started process (PID=987) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:22.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:38:22.676+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:22.675+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:23.578+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:23.616+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:23.615+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:38:23.645+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:23.645+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:38:23.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.003 seconds
+[2026-01-21T23:38:53.960+0000] {processor.py:161} INFO - Started process (PID=1008) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:53.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:38:53.963+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:53.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:55.062+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:38:55.097+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:55.097+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:38:55.125+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:38:55.125+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:38:55.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.193 seconds
+[2026-01-21T23:39:25.422+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:25.424+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:39:25.426+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:25.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:26.502+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:26.535+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:26.535+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:39:26.563+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:26.563+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:39:26.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.170 seconds
+[2026-01-21T23:39:56.894+0000] {processor.py:161} INFO - Started process (PID=1050) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:56.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:39:56.899+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:56.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:58.062+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:39:58.096+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:58.096+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:39:58.121+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:39:58.121+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:39:58.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.263 seconds
+[2026-01-21T23:40:28.420+0000] {processor.py:161} INFO - Started process (PID=1071) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:40:28.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:40:28.423+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:40:28.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:40:29.465+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:40:29.499+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:40:29.499+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:40:29.528+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:40:29.528+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:40:29.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.148 seconds
+[2026-01-21T23:40:59.647+0000] {processor.py:161} INFO - Started process (PID=1092) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:40:59.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:40:59.650+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:40:59.649+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:41:00.678+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:41:00.710+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:41:00.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:41:00.737+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:41:00.737+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:41:00.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.123 seconds
+[2026-01-21T23:41:31.053+0000] {processor.py:161} INFO - Started process (PID=1113) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:41:31.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:41:31.056+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:41:31.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:41:32.142+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:41:32.176+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:41:32.176+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:41:32.206+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:41:32.206+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:41:32.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.186 seconds
+[2026-01-21T23:42:02.342+0000] {processor.py:161} INFO - Started process (PID=1134) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:02.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:42:02.346+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:02.345+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:03.417+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:03.453+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:03.452+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:42:03.479+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:03.479+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:42:03.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.173 seconds
+[2026-01-21T23:42:33.736+0000] {processor.py:161} INFO - Started process (PID=1155) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:33.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:42:33.739+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:33.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:34.823+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:42:34.856+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:34.856+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:42:34.883+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:42:34.883+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:42:34.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.175 seconds
+[2026-01-21T23:43:05.178+0000] {processor.py:161} INFO - Started process (PID=1176) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:05.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:43:05.181+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:05.180+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:06.271+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:06.304+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:06.304+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:43:06.333+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:06.333+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:43:06.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.191 seconds
+[2026-01-21T23:43:36.649+0000] {processor.py:161} INFO - Started process (PID=1197) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:36.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:43:36.654+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:36.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:37.708+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:43:37.744+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:37.744+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:43:37.773+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:43:37.773+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:43:37.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.159 seconds
+[2026-01-21T23:44:08.065+0000] {processor.py:161} INFO - Started process (PID=1218) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:08.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:44:08.068+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:08.068+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:09.279+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:09.320+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:09.318+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:44:09.352+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:09.351+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:44:09.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.321 seconds
+[2026-01-21T23:44:39.655+0000] {processor.py:161} INFO - Started process (PID=1239) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:39.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:44:39.659+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:39.658+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:40.800+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:44:40.832+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:40.832+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:44:40.860+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:44:40.859+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:44:40.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.239 seconds
+[2026-01-21T23:45:11.173+0000] {processor.py:161} INFO - Started process (PID=1260) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:11.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:45:11.178+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:11.177+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:12.442+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:12.487+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:12.486+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:45:12.515+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:12.515+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:45:12.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.383 seconds
+[2026-01-21T23:45:42.811+0000] {processor.py:161} INFO - Started process (PID=1281) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:42.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:45:42.814+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:42.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:43.979+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:45:44.021+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:44.020+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:45:44.058+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:45:44.058+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:45:44.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.292 seconds
+[2026-01-21T23:46:14.397+0000] {processor.py:161} INFO - Started process (PID=1302) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:14.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:46:14.403+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:14.402+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:15.652+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:15.687+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:15.686+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:46:15.721+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:15.720+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:46:15.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.354 seconds
+[2026-01-21T23:46:46.002+0000] {processor.py:161} INFO - Started process (PID=1323) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:46.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:46:46.005+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:46.005+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:46.880+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:46:46.909+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:46.909+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:46:46.932+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:46:46.932+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:46:46.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 0.958 seconds
+[2026-01-21T23:47:17.238+0000] {processor.py:161} INFO - Started process (PID=1344) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:17.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:47:17.240+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:17.240+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:18.152+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:18.181+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:18.180+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:47:18.204+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:18.204+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:47:18.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 0.993 seconds
+[2026-01-21T23:47:48.472+0000] {processor.py:161} INFO - Started process (PID=1365) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:48.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:47:48.474+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:48.474+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:49.443+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:47:49.472+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:49.472+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:47:49.496+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:47:49.495+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:47:49.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.051 seconds
+[2026-01-21T23:48:19.689+0000] {processor.py:161} INFO - Started process (PID=1386) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:19.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:48:19.692+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:19.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:20.586+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:20.613+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:20.613+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:48:20.636+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:20.635+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:48:20.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 0.976 seconds
+[2026-01-21T23:48:50.927+0000] {processor.py:161} INFO - Started process (PID=1407) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:50.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:48:50.930+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:50.930+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:52.016+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:48:52.051+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:52.051+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:48:52.081+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:48:52.081+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:48:52.110+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.186 seconds
+[2026-01-21T23:49:22.373+0000] {processor.py:161} INFO - Started process (PID=1428) to work on /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:49:22.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/nyc_taxi_price_predictor.py for tasks to queue
+[2026-01-21T23:49:22.376+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:49:22.376+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:49:23.529+0000] {processor.py:840} INFO - DAG(s) 'nyc_taxi_weather_prediction' retrieved from /opt/airflow/dags/nyc_taxi_price_predictor.py
+[2026-01-21T23:49:23.562+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:49:23.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-21T23:49:23.588+0000] {logging_mixin.py:188} INFO - [2026-01-21T23:49:23.588+0000] {dag.py:3823} INFO - Setting next_dagrun for nyc_taxi_weather_prediction to 2026-01-21 00:00:00+00:00, run_after=2026-01-22 00:00:00+00:00
+[2026-01-21T23:49:23.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/nyc_taxi_price_predictor.py took 1.247 seconds
