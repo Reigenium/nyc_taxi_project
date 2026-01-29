@@ -1,0 +1,6 @@
+holidays
+apache-airflow-providers-amazon
+pandas
+scikit-learn
+requests
+psycopg2-binary

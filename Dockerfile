@@ -14,4 +14,5 @@ USER airflow
 # requests - запросы к API
 # psycopg2-binary - драйвер Postgres
 # pyarrow - ускоряет чтение CSV/Parquet
-RUN pip install --no-cache-dir pandas scikit-learn requests psycopg2-binary pyarrow
+# holidays - список праздников США 
+RUN pip install --no-cache-dir pandas scikit-learn requests psycopg2-binary pyarrow holidays

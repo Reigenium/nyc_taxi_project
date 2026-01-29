@@ -19,3 +19,4 @@ venv/
 
 logs/
 */logs/
+dags/data/*.csv

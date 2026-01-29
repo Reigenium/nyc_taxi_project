@@ -2,7 +2,6 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator, BranchPythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-# 🔥 НОВОЕ: Импорт для работы с S3
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook 
 
 from datetime import datetime, timedelta
@@ -10,18 +9,26 @@ import pandas as pd
 import requests
 import numpy as np
 import os
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error, r2_score
+import holidays
 import pickle
+import shutil
+import os
+
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.linear_model import Ridge
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error, r2_score
 
 # --- КОНФИГУРАЦИЯ ---
 DATA_PATH = '/opt/airflow/dags/data/taxi_data.csv'
 PROCESSED_PATH = '/tmp/merged_nyc_data.csv'
-MODEL_PATH = '/opt/airflow/dags/data/price_model.pkl'
-
-# 🔥 ВПИШИ СЮДА ИМЯ СВОЕГО БАКЕТА
+BEST_MODEL_PATH = '/opt/airflow/dags/data/best_price_model.pkl'
 BUCKET_NAME = 'taxi-price-prediction-data' 
+
+# --- НАСТРОЙКИ TELEGRAM (Вставь свои данные!) ---
+TG_BOT_TOKEN = os.getenv('TG_TOKEN')
+TG_CHAT_ID = os.getenv('TG_CHAT_ID')
 
 default_args = {
     'owner': 'airflow',
@@ -30,6 +37,15 @@ default_args = {
 }
 
 # --- ФУНКЦИИ ---
+
+def send_telegram_message(text):
+    """Отправляет сообщение в Telegram"""
+    url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
+    params = {'chat_id': TG_CHAT_ID, 'text': text}
+    try:
+        requests.get(url, params=params)
+    except Exception as e:
+        print(f"Ошибка отправки в Telegram: {e}")
 
 def extract_transform_taxi(**kwargs):
     if not os.path.exists(DATA_PATH):
@@ -40,8 +56,13 @@ def extract_transform_taxi(**kwargs):
     df.columns = ['pickup_datetime', 'distance', 'price']
     df['pickup_datetime'] = pd.to_datetime(df['pickup_datetime'])
     df['date_hour'] = df['pickup_datetime'].dt.floor('H')
+    
     df = df[(df['price'] > 0) & (df['price'] < 300)]
     df = df[(df['distance'] > 0) & (df['distance'] < 100)]
+    
+    us_holidays = holidays.US()
+    df['is_holiday'] = df['pickup_datetime'].dt.date.apply(lambda x: 1 if x in us_holidays else 0)
+    
     df.to_parquet('/tmp/taxi_clean.parquet')
     
     min_date = df['date_hour'].min().strftime('%Y-%m-%d')
@@ -51,7 +72,6 @@ def extract_transform_taxi(**kwargs):
 def extract_weather_api(**kwargs):
     ti = kwargs['ti']
     dates = ti.xcom_pull(task_ids='extract_taxi_data')
-    print(f"Запрашиваем погоду с {dates['min_date']} по {dates['max_date']}")
     
     url = "https://archive-api.open-meteo.com/v1/archive"
     params = {
@@ -81,65 +101,93 @@ def merge_and_prepare(**kwargs):
     merged = pd.merge(df_taxi, df_weather, on='date_hour', how='inner')
     merged.dropna(inplace=True)
     merged.to_csv(PROCESSED_PATH, index=False)
-    print(f"Итоговый датасет: {merged.shape[0]} строк.")
 
 def load_to_postgres(**kwargs):
     df = pd.read_csv(PROCESSED_PATH)
     pg_hook = PostgresHook(postgres_conn_id='postgres_default')
     engine = pg_hook.get_sqlalchemy_engine()
     df.to_sql('nyc_taxi_weather', engine, if_exists='replace', index=False)
-    print("Данные успешно загружены в Postgres.")
 
-# 🔥 НОВОЕ: Функция загрузки в S3
 def upload_to_s3(**kwargs):
-    """
-    Загружает обработанный файл в S3 бакет
-    """
-    # Формируем уникальное имя файла с датой запуска (чтобы не затирать старые)
     execution_date = kwargs['ds'] 
     s3_key = f"processed_data_{execution_date}.csv"
-    
-    hook = S3Hook(aws_conn_id='aws_s3_conn') # Используем подключение, которое создали в UI
-    
-    hook.load_file(
-        filename=PROCESSED_PATH,
-        key=s3_key,
-        bucket_name=BUCKET_NAME,
-        replace=True
-    )
-    print(f"Файл {PROCESSED_PATH} загружен в S3: {BUCKET_NAME}/{s3_key}")
+    hook = S3Hook(aws_conn_id='aws_s3_conn')
+    hook.load_file(filename=PROCESSED_PATH, key=s3_key, bucket_name=BUCKET_NAME, replace=True)
 
 def check_data_quality(**kwargs):
     pg_hook = PostgresHook(postgres_conn_id='postgres_default')
     records = pg_hook.get_first("SELECT COUNT(*) FROM nyc_taxi_weather")
     count = records[0]
     if count > 1000:
-        return 'train_model'
+        return ['train_rf', 'train_gb', 'train_ridge', 'train_tree']
     else:
         return 'stop_pipeline'
 
-def train_ml_model(**kwargs):
+def train_model(model_type, **kwargs):
     pg_hook = PostgresHook(postgres_conn_id='postgres_default')
     df = pg_hook.get_pandas_df("SELECT * FROM nyc_taxi_weather")
-    X = df[['distance', 'temperature', 'precipitation', 'wind_speed']]
+    features = ['distance', 'temperature', 'precipitation', 'wind_speed', 'is_holiday']
+    X = df[features]
     y = df['price']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    model = RandomForestRegressor(n_estimators=50, max_depth=10, random_state=42)
+    
+    if model_type == 'random_forest':
+        model = RandomForestRegressor(n_estimators=50, max_depth=10, random_state=42)
+    elif model_type == 'gradient_boosting':
+        model = GradientBoostingRegressor(n_estimators=50, random_state=42)
+    elif model_type == 'ridge':
+        model = Ridge(alpha=1.0)
+    elif model_type == 'decision_tree':
+        model = DecisionTreeRegressor(max_depth=10, random_state=42)
+    
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
     mae = mean_absolute_error(y_test, predictions)
-    r2 = r2_score(y_test, predictions)
-    print(f"MAE: ${mae:.2f}, R2: {r2:.4f}")
-    with open(MODEL_PATH, 'wb') as f:
+    
+    tmp_path = f"/tmp/model_{model_type}.pkl"
+    with open(tmp_path, 'wb') as f:
         pickle.dump(model, f)
-    return f"MAE: {mae}"
+    return mae
+
+def choose_best_model(**kwargs):
+    ti = kwargs['ti']
+    mae_rf = ti.xcom_pull(task_ids='train_rf')
+    mae_gb = ti.xcom_pull(task_ids='train_gb')
+    mae_ridge = ti.xcom_pull(task_ids='train_ridge')
+    mae_tree = ti.xcom_pull(task_ids='train_tree')
+    
+    results = {
+        'Random Forest': mae_rf,
+        'Gradient Boosting': mae_gb,
+        'Ridge Regression': mae_ridge,
+        'Decision Tree': mae_tree
+    }
+    
+    best_model_name = min(results, key=results.get)
+    best_mae = results[best_model_name]
+    
+    # Сохраняем модель
+    model_slug = best_model_name.lower().replace(" ", "_")
+    shutil.copy(f"/tmp/model_{model_slug}.pkl", BEST_MODEL_PATH)
+    
+    # ОТПРАВЛЯЕМ УВЕДОМЛЕНИЕ В ТЕЛЕГРАМ
+    message = (
+        f"🚀 Pipeline Finished Successfully!\n\n"
+        f"🏆 Winner: {best_model_name}\n"
+        f"📉 MAE: ${best_mae:.2f}\n\n"
+        f"📊 All Results:\n"
+    )
+    for name, mae in results.items():
+        message += f"- {name}: ${mae:.2f}\n"
+    
+    send_telegram_message(message)
+    print(f"Message sent. Winner: {best_model_name}")
 
 # --- ОПРЕДЕЛЕНИЕ DAG ---
-
 with DAG(
-    'nyc_taxi_weather_prediction',
+    'nyc_taxi_weather_ml_v3', # Обновил версию
     default_args=default_args,
-    description='Predict Taxi Fares based on Weather',
+    description='Complex ML Pipeline with Telegram Alerts',
     schedule_interval='@daily',
     start_date=datetime(2025, 1, 1),
     catchup=False
@@ -148,75 +196,26 @@ with DAG(
     create_table = PostgresOperator(
         task_id='create_table',
         postgres_conn_id='postgres_default',
-        sql="""
-            CREATE TABLE IF NOT EXISTS nyc_taxi_weather (
-                pickup_datetime TIMESTAMP,
-                distance FLOAT,
-                price FLOAT,
-                date_hour TIMESTAMP,
-                temperature FLOAT,
-                precipitation FLOAT,
-                wind_speed FLOAT
-            );
-        """
+        sql="CREATE TABLE IF NOT EXISTS nyc_taxi_weather (pickup_datetime TIMESTAMP, distance FLOAT, price FLOAT, date_hour TIMESTAMP, temperature FLOAT, precipitation FLOAT, wind_speed FLOAT, is_holiday INT);"
     )
 
-    t1_taxi = PythonOperator(
-        task_id='extract_taxi_data',
-        python_callable=extract_transform_taxi
-    )
+    t1_taxi = PythonOperator(task_id='extract_taxi_data', python_callable=extract_transform_taxi)
+    t2_weather = PythonOperator(task_id='extract_weather_api', python_callable=extract_weather_api)
+    t3_merge = PythonOperator(task_id='merge_data', python_callable=merge_and_prepare)
+    t4_load = PythonOperator(task_id='load_to_postgres', python_callable=load_to_postgres)
+    t4_s3 = PythonOperator(task_id='upload_to_s3', python_callable=upload_to_s3, provide_context=True)
+    t5_check = BranchPythonOperator(task_id='check_data_quality', python_callable=check_data_quality)
     
-    t2_weather = PythonOperator(
-        task_id='extract_weather_api',
-        python_callable=extract_weather_api
-    )
+    t6_rf = PythonOperator(task_id='train_rf', python_callable=train_model, op_kwargs={'model_type': 'random_forest'})
+    t6_gb = PythonOperator(task_id='train_gb', python_callable=train_model, op_kwargs={'model_type': 'gradient_boosting'})
+    t6_ridge = PythonOperator(task_id='train_ridge', python_callable=train_model, op_kwargs={'model_type': 'ridge'})
+    t6_tree = PythonOperator(task_id='train_tree', python_callable=train_model, op_kwargs={'model_type': 'decision_tree'})
 
-    t3_merge = PythonOperator(
-        task_id='merge_data',
-        python_callable=merge_and_prepare
-    )
+    t7_select_best = PythonOperator(task_id='select_best_model', python_callable=choose_best_model, trigger_rule='none_failed')
+    t_stop = PythonOperator(task_id='stop_pipeline', python_callable=lambda: print("Stopped"))
 
-    t4_load = PythonOperator(
-        task_id='load_to_postgres',
-        python_callable=load_to_postgres
-    )
-
-    # 🔥 НОВОЕ: Задача загрузки в S3
-    t4_s3_upload = PythonOperator(
-        task_id='upload_to_s3',
-        python_callable=upload_to_s3,
-        provide_context=True # Нужно, чтобы получить дату запуска
-    )
-
-    t5_branch = BranchPythonOperator(
-        task_id='check_data_quality',
-        python_callable=check_data_quality
-    )
-
-    t6_train = PythonOperator(
-        task_id='train_model',
-        python_callable=train_ml_model
-    )
-
-    t7_stop = PythonOperator(
-        task_id='stop_pipeline',
-        python_callable=lambda: print("Недостаточно данных для обучения.")
-    )
-
-    # 🔥 ОБНОВЛЕННАЯ ЛОГИКА: Параллельный запуск
-    # Сначала создаем таблицу
     create_table >> t1_taxi 
-    
-    # Готовим данные
     t1_taxi >> t2_weather >> t3_merge 
-    
-    # После объединения запускаем ДВЕ задачи одновременно: 
-    # 1. Грузим в Postgres
-    # 2. Грузим в S3
-    t3_merge >> [t4_load, t4_s3_upload] 
-    
-    # Когда ОБЕ загрузки прошли, проверяем качество
-    [t4_load, t4_s3_upload] >> t5_branch
-    
-    # Ветвление
-    t5_branch >> [t6_train, t7_stop]
+    t3_merge >> [t4_load, t4_s3] >> t5_check
+    t5_check >> t_stop
+    t5_check >> [t6_rf, t6_gb, t6_ridge, t6_tree] >> t7_select_best
