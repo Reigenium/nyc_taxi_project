@@ -26,7 +26,7 @@ The pipeline follows an ELT (Extract, Load, Transform) pattern:
 * **Libraries:** Pandas, Scikit-Learn, SQLAlchemy, Psycopg2
 
 ---
-## 🌟 New Features (v3.0)
+## 🌟 New Features (v2.0)
 
 ### 🤖 AutoML & Parallel Training
 The pipeline now trains **4 different Machine Learning models** in parallel to find the best performer:
