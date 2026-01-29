@@ -26,6 +26,28 @@ The pipeline follows an ELT (Extract, Load, Transform) pattern:
 * **Libraries:** Pandas, Scikit-Learn, SQLAlchemy, Psycopg2
 
 ---
+## 🌟 New Features (v3.0)
+
+### 🤖 AutoML & Parallel Training
+The pipeline now trains **4 different Machine Learning models** in parallel to find the best performer:
+1.  **Random Forest** (Robust baseline)
+2.  **Gradient Boosting** (High accuracy)
+3.  **Ridge Regression** (Linear baseline)
+4.  **Decision Tree** (Interpretability)
+
+The system automatically compares their **MAE (Mean Absolute Error)** and promotes the best model to production.
+
+### 📱 Real-time Alerts
+Integrated with **Telegram Bot API** for instant notifications.
+- Sends a report immediately after pipeline completion.
+- Displays the winning model and performance metrics directly in your chat.
+- Zero-downtime monitoring.
+
+### 🛡️ Security
+- All credentials are managed via **Environment Variables**.
+- Project is secured against accidental secret exposure using `.env` and `.gitignore`.
+
+---
 
 ## 📂 Project Structure
 
